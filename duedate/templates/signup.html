@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Sign up · DueDate{% endblock %}
+{% block content %}
+<h1>Create your account</h1>
+<form method="POST" class="card">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+  <label for="password">Password (min. 8 characters)</label>
+  <input type="password" id="password" name="password" minlength="8" required>
+  <p><button class="btn" type="submit">Sign up</button></p>
+</form>
+<p class="muted">Already have an account? <a href="{{ url_for('login') }}">Log in</a></p>
+{% endblock %}

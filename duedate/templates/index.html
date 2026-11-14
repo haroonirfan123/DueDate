@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero">
+  <h1>Never miss a deadline again.</h1>
+  <p class="muted">DueDate keeps every assignment, course, and priority in one place.</p>
+  <p><a class="btn" href="{{ url_for('signup') }}">Get started free</a>
+     <a class="btn secondary" href="{{ url_for('login') }}">Log in</a></p>
+</div>
+{% endblock %}
